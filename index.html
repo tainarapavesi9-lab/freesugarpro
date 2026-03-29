@@ -67,14 +67,27 @@
         .body-text p{margin-bottom:16px}
         .eyebrow{font-size:.75rem;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
 
+        /* Barra de Oferta no Topo */
         .offer-bar{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 50%,#2563eb 100%);color:#fff;padding:10px 16px}
         .offer-bar-inner{max-width:768px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 24px}
         .offer-bar-item{display:flex;align-items:center;gap:6px;font-weight:700;font-size:.75rem}
         .offer-bar-item svg{width:16px;height:16px}
 
-        .header-logo{max-width:150px;margin: 0 auto 24px auto; display: block}
+        /* Novo Cabeçalho Dedicado */
+        .site-header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #f1f5f9;
+            text-align: center;
+        }
+        .header-logo {
+            max-width: 140px;
+            margin: 0 auto;
+            display: block;
+        }
 
-        .hero{padding:40px 0;background:var(--bg-white)}
+        /* Secção Hero Ajustada */
+        .hero{padding:32px 0 48px 0;background:var(--bg-white)}
         .hero-inner{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:32px}
         .hero-img{width:100%;max-width:320px;margin:0 auto;filter:drop-shadow(0 8px 20px rgba(0,0,0,.08))}
         .hero-text{flex:1;text-align: center}
@@ -140,7 +153,7 @@
 
         .final-cta-box{background:var(--bg-dark);border-radius:20px;padding:40px 20px;text-align:center;color:#fff}
 
-        /* Seção da Seta Grande */
+        /* Secção da Seta Grande */
         .arrow-section {background: #004d2c; padding: 40px 0; color: #fff; text-align: center; cursor: pointer; text-decoration: none; display: block}
         .arrow-container {display: flex; align-items: center; justify-content: center; gap: 20px}
         .arrow-text {font-size: 1.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px}
@@ -153,12 +166,13 @@
         .floating-cta{position:fixed;bottom:20px;right:20px;background:var(--cta);color:#fff;font-weight:700;font-size:.85rem;padding:14px 24px;border-radius:30px;box-shadow:0 6px 15px rgba(0,0,0,0.3);z-index:100;display:none;align-items:center;gap:8px}
 
         @media(min-width:768px){
+            .site-header { padding: 30px 0; }
+            .header-logo { max-width: 180px; }
             .section{padding:72px 0}
             .h1{font-size:2.5rem; text-align: left}
             .hero-inner{flex-direction:row;align-items:flex-start;gap:60px}
             .hero-img{max-width:380px}
             .hero-text{text-align: left}
-            .header-logo{margin: 0 0 32px 0}
             .price-card{text-align: left}
             .price-row{justify-content: flex-start}
             .cta-primary{width: auto; padding: 20px 60px}
@@ -176,6 +190,7 @@
 </head>
 <body>
 
+<!-- 1. Barra de Oferta (Topo) -->
 <div class="offer-bar">
     <div class="offer-bar-inner">
         <div class="offer-bar-item">
@@ -189,11 +204,18 @@
     </div>
 </div>
 
+<!-- 2. Cabeçalho com Logo -->
+<header class="site-header">
+    <div class="container">
+        <img src="images/imgi_1_FSP_Black@4x.png" alt="Free Sugar Pro Logo" class="header-logo">
+    </div>
+</header>
+
+<!-- 3. Secção Hero -->
 <section class="hero">
     <div class="container-wide">
         <div class="hero-inner">
             <div class="hero-img-wrap">
-                <img src="images/imgi_1_FSP_Black@4x.png" alt="Free Sugar Pro Logo" class="header-logo">
                 <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9">
                     <img src="images/imgi_6_3bottles.png" alt="Free Sugar Pro Oferta Gotas" class="hero-img">
                 </a>
@@ -314,7 +336,6 @@
     <div class="container">
         <h2 class="section-badge-full text-center">Como as Gotas Apoiam Seu Corpo</h2>
         <div class="works-wrap">
-            <!-- Atualização: Imagem inserida conforme solicitado -->
             <img src="images/sugarfree.png" alt="Suporte Free Sugar Pro" class="works-img" loading="lazy">
             <div class="steps">
                 <div class="step">
