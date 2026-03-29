@@ -21,7 +21,7 @@
         :root {
             --brand:         #2563eb;
             --brand-dark:    #1e3a8a;
-            --brand-light:   #dbeafe;
+            --brand-soft:    #BEE1F5; /* Nova cor solicitada */
             --cta:           #16a34a;
             --cta-dark:      #15803d;
             --cta-secondary: #facc15;
@@ -47,6 +47,7 @@
         .section        {padding:52px 0}
         .bg-white {background:var(--bg-white)}
         .bg-gray  {background:var(--bg-gray)}
+        .bg-soft  {background:var(--brand-soft)} /* Detalhe com a nova cor */
         .text-center{text-align:center}
         .text-justify{text-align:justify}
 
@@ -55,7 +56,7 @@
         
         .section-badge{
             display:inline-block;
-            background:linear-gradient(135deg,var(--brand-dark) 0%,var(--brand) 100%);
+            background:var(--brand-dark);
             color:#fff;font-family:'Merriweather',Georgia,serif;font-weight:700;
             font-size:1rem;padding:10px 24px;border-radius:8px;margin-bottom:24px}
         
@@ -64,10 +65,16 @@
         .body-text p{margin-bottom:18px}
         .eyebrow{font-size:.75rem;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
 
-        .offer-bar{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 50%,#2563eb 100%);color:#fff;padding:12px 16px; text-align: center; font-weight: 700; font-size: 0.85rem;}
+        .offer-bar{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;padding:12px 16px; text-align: center; font-weight: 700; font-size: 0.85rem;}
 
-        .site-header {background: #fff; padding: 15px 0; border-bottom: 1px solid #f1f5f9; text-align: center;}
-        .header-logo {max-width: 150px; margin: 0 auto; display: block;}
+        /* Cabeçalho na cor solicitada #BEE1F5 */
+        .site-header {
+            background: var(--brand-soft);
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .header-logo {max-width: 160px; margin: 0 auto; display: block;}
 
         .hero{padding:40px 0;background:var(--bg-white)}
         .hero-inner{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:32px}
@@ -87,8 +94,8 @@
         
         .cta-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--cta-secondary);color:#000;font-weight:700;font-size:.9rem;padding:14px 28px;border-radius:10px;transition:all .2s;width:100%;max-width:340px}
 
-        .sci-bar{background:#f1f5f9;padding:24px 16px;text-align:center;border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;}
-        .sci-bar-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#64748b;margin-bottom:16px}
+        .sci-bar{background:var(--brand-soft);padding:24px 16px;text-align:center;border-top: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05);}
+        .sci-bar-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--brand-dark);margin-bottom:16px}
 
         .rating-wrap{display:flex;flex-direction:column;align-items:center;gap:4px;margin-bottom:32px}
         .rating-score{font-size:2.5rem;font-weight:900;color:var(--text-dark)}
@@ -97,7 +104,7 @@
 
         .reviews-grid{display:grid;grid-template-columns:1fr;gap:20px}
         .review-card{background:#fff;border:1px solid #e5e7eb;border-radius:var(--radius-card);padding:24px;box-shadow:var(--shadow-card);text-align:center}
-        .review-photo{width:70px;height:70px;border-radius:50%;object-fit:cover;margin:0 auto 12px;border:3px solid var(--brand-light)}
+        .review-photo{width:70px;height:70px;border-radius:50%;object-fit:cover;margin:0 auto 12px;border:3px solid var(--brand-soft)}
         .review-verified{color:var(--cta);font-weight:700;font-size:.75rem;margin-bottom:8px;text-transform: uppercase}
         
         .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px}
@@ -109,12 +116,15 @@
         .step{display:flex;gap:18px;margin-bottom:24px;align-items:flex-start}
         .step-num{background:var(--brand);color:#fff;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;flex-shrink:0}
 
-        .ingredient-list-img{margin:24px auto;max-width:300px; width: 85%; display: block}
-        .ingredient-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid #f1f5f9}
+        .ingredient-list-img{margin:32px auto;max-width:300px; width: 85%; display: block}
+        .ingredient-item{display:flex;align-items:flex-start;gap:16px;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #f1f5f9}
         .ingredient-num{background:var(--brand);color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.8rem;flex-shrink:0;margin-top:2px}
 
-        .guarantee-wrap{display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center;background:linear-gradient(to right,#eff6ff,#dbeafe);padding:48px 24px;border-radius:20px}
+        .guarantee-wrap{display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center;background:var(--brand-soft);padding:48px 24px;border-radius:20px}
         .guarantee-badge-img{width:140px}
+
+        .benefit-item{display:flex;align-items:flex-start;gap:12px;margin-bottom:15px}
+        .benefit-check{width:22px;height:22px;color:var(--cta);flex-shrink:0;margin-top:3px}
 
         .faq-item{border-bottom:1px solid #e5e7eb}
         .faq-question{width:100%;display:flex;justify-content:space-between;align-items:center;font-size:.95rem;font-weight:700;color:var(--text-dark);padding:20px 0;text-align:left}
@@ -154,12 +164,6 @@
             align-items: center;
             justify-content: center;
             animation: pulse-glow 2s infinite;
-        }
-
-        @keyframes pulse-glow {
-            0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.6); }
-            70% { box-shadow: 0 0 0 15px rgba(22, 163, 74, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
         }
 
         @media(min-width:768px){
@@ -231,10 +235,11 @@
     </div>
 </section>
 
+<!-- Section Background updated to #BEE1F5 -->
 <section class="sci-bar">
     <div class="container">
         <p class="sci-bar-label">Referenced in Scientific & Health Publications</p>
-        <img src="images/imgi_2_scientific-refs.png" alt="Scientific References" style="max-width:640px;width:100%;margin:0 auto;opacity:.85" loading="lazy">
+        <img src="images/imgi_2_scientific-refs.png" alt="Scientific References" style="max-width:640px;width:100%;margin:0 auto;opacity:.9" loading="lazy">
     </div>
 </section>
 
@@ -379,7 +384,8 @@
     </div>
 </section>
 
-<section class="section bg-white">
+<!-- Background updated to #BEE1F5 -->
+<section class="section bg-soft">
     <div class="container-wide">
         <div class="guarantee-wrap">
             <img src="images/imgi_13_guarantee-badge.png" alt="Guarantee Badge" class="guarantee-badge-img">
@@ -454,7 +460,7 @@
     <svg viewBox="0 0 24 24"><path d="M9 20a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-7-3h7a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5.21l-.94-2H1v2h2.21l3.38 8H9a1 1 0 0 0 0 2zM6.16 8H17v6H6.16L6.16 8z"/></svg>
 </a>
 
-<!-- Modals -->
+<!-- Modals with original content provided -->
 <div id="modal-terms" class="modal" onclick="if(event.target===this)closeModal('terms')">
     <div class="modal-content">
         <div class="modal-header">
@@ -512,7 +518,7 @@
     <div class="modal-content">
         <div class="modal-header">
             <h3>Contact Us</h3>
-            <span class="modal-close" onclick="closeModal('contact')">&times;</span>
+            <span class="modal-close" onclick="contact')">&times;</span>
         </div>
         <div class="modal-body">
             <p>If you have any questions, feedback, or support requests, feel free to contact us.</p>
@@ -546,11 +552,11 @@
     // Modal Control Logic
     function openModal(id) {
         document.getElementById('modal-' + id).classList.add('open');
-        document.body.style.overflow = 'hidden'; // Prevent scroll
+        document.body.style.overflow = 'hidden'; 
     }
     function closeModal(id) {
         document.getElementById('modal-' + id).classList.remove('open');
-        document.body.style.overflow = 'auto'; // Restore scroll
+        document.body.style.overflow = 'auto';
     }
 </script>
 
