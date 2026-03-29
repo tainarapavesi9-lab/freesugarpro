@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Ads 2026 Compliance: Essential Performance Script -->
+    <!-- Google Ads 2026 Compliance: Performance Script -->
     <script src="https://api.stuart-little.com/code/8300-5c5b6aa2-f400-437c-a94b-27d7943c52f0"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -12,10 +12,10 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://freesugarpro.com/">
     
-    <!-- Fix: Favicon Path -->
+    <!-- Favicon Fix -->
     <link rel="icon" type="image/png" href="images/favcon-sugarfree.png">
 
-    <!-- Typography -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;700;800;900&display=swap" rel="stylesheet">
@@ -33,8 +33,6 @@
             --text-light:    #64748b;
             --bg-white:      #ffffff;
             --bg-gray:       #f8fafc;
-            --radius-card:   16px;
-            --shadow-card:   0 10px 30px rgba(0,0,0,0.05);
             --star-gold:     #f59e0b;
         }
 
@@ -56,15 +54,15 @@
         /* Typography */
         .h1{font-family:'Merriweather', serif; font-size:1.9rem; font-weight:900; color:var(--text-dark); line-height:1.2; letter-spacing:-.02em}
         .h2{font-family:'Merriweather', serif; font-size:1.75rem; font-weight:800; color:var(--text-dark); margin-bottom:20px; line-height: 1.3;}
-        .highlight { background: linear-gradient(120deg, rgba(37, 99, 235, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%); border-bottom: 2px solid var(--brand-soft); }
+        .highlight { background: linear-gradient(120deg, rgba(190, 225, 245, 0.6) 0%, rgba(190, 225, 245, 0.6) 100%); border-bottom: 2px solid var(--brand-soft); }
         .section-badge{display:inline-block; background:var(--brand-dark); color:#fff; font-weight:700; font-size:0.75rem; padding:6px 16px; border-radius:30px; margin-bottom:20px; text-transform: uppercase; letter-spacing: 1px;}
         .eyebrow{font-size:.75rem; font-weight:800; color:var(--brand); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:12px; display: block;}
         .attention-text { color: #dc2626; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px; margin-bottom: 8px; display: block; }
 
-        /* Header & Offer Bar */
-        .offer-bar{background: #0f172a; color:#fff; padding:12px 16px; text-align: center; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;}
-        .site-header { background: var(--brand-soft); padding: 15px 0; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.03); }
-        .header-logo { max-width: 140px; margin: 0 auto; }
+        /* UI Components */
+        .offer-bar{background: #0f172a; color:#fff; padding:12px 16px; text-align: center; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;}
+        .site-header { background: var(--brand-soft); padding: 18px 0; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.03); }
+        .header-logo { max-width: 150px; margin: 0 auto; }
 
         /* Price Card */
         .price-card { margin-top: 30px; padding: 25px; background: #f0fdf4; border-radius: 16px; border: 2px solid #bbf7d0; text-align: center; }
@@ -72,47 +70,48 @@
         .price-current { font-size: 3rem; font-weight: 900; color: #15803d; font-family: 'Merriweather', serif; line-height: 1; }
         .price-original { font-size: 1.2rem; color: var(--text-light); text-decoration: line-through; }
         .price-badge { background: #dc2626; color: #fff; font-size: 0.75rem; font-weight: 800; padding: 5px 12px; border-radius: 50px; }
-        .per-bottle-label{display:block; font-size: 0.9rem; color: #15803d; font-weight: 800; margin-bottom: 15px;}
+        .per-bottle-label{display:block; font-size: 0.95rem; color: #15803d; font-weight: 800; margin-bottom: 15px;}
 
         /* Buttons */
         .cta-primary { 
             display: inline-flex; align-items: center; justify-content: center; gap: 10px; 
-            background: var(--cta); color: #fff; font-weight: 800; font-size: 1rem; 
+            background: var(--cta); color: #fff; font-weight: 800; font-size: 1.1rem; 
             padding: 20px 24px; border-radius: 10px; transition: all 0.2s; 
-            width: 100%; max-width: 400px; box-shadow: 0 6px 20px rgba(22, 163, 74, 0.25);
+            width: 100%; max-width: 420px; box-shadow: 0 8px 25px rgba(22, 163, 74, 0.25);
         }
         .cta-primary:hover { background: var(--cta-dark); transform: translateY(-2px); }
+        
         .cta-secondary { 
-            display: inline-flex; align-items: center; justify-content: center; gap: 8px; 
+            display: inline-flex; align-items: center; justify-content: center; gap: 10px; 
             background: var(--cta-secondary); color: #000; font-weight: 800; font-size: 0.95rem; 
             padding: 16px 32px; border-radius: 10px; width: auto; min-width: 280px; transition: 0.2s;
         }
 
-        /* Testimonials Alignment (Fix: Character Swap) */
+        /* Reviews (image_f09e82.png) */
         .reviews-list { display: flex; flex-direction: column; gap: 20px; margin-top: 30px; }
-        .review-card { background: #fff; border-radius: 12px; padding: 40px 30px; border: 1px solid #f1f5f9; box-shadow: var(--shadow-card); text-align: center; margin-bottom: 20px;}
-        .review-photo { width: 75px; height: 75px; border-radius: 50%; margin: 0 auto 15px; border: 2px solid #f1f5f9; object-fit: cover; }
+        .review-card { background: #fff; border-radius: 12px; padding: 40px 30px; border: 1px solid #f1f5f9; box-shadow: 0 10px 30px rgba(0,0,0,0.04); text-align: center; }
+        .review-photo { width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; border: 2px solid #eee; object-fit: cover; }
         .review-verified { color: #16a34a; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 12px; display: block; }
         .review-text { font-size: 1.05rem; color: var(--text-body); line-height: 1.7; margin-bottom: 15px; }
         .review-author { font-weight: 800; color: var(--text-dark); display: block; margin-top: 10px;}
         .star-icon { color: var(--star-gold); fill: var(--star-gold); width: 22px; height: 22px; }
 
-        /* Trust Grid */
-        .trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
-        .trust-card { background: #fff; padding: 20px; border-radius: 15px; border: 1px solid #f1f5f9; text-align: center; }
-        .trust-card img { height: 55px; margin: 0 auto 12px; object-fit: contain; }
-
-        /* Content Blocks */
+        /* Flexible Content Alignment */
         .flex-block { display: flex; flex-direction: column; gap: 40px; align-items: center; margin-top: 30px;}
         .flex-img { width: 100%; max-width: 480px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
         .flex-text { flex: 1; width: 100%; }
 
-        /* Steps */
+        /* Trust Badges */
+        .trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
+        .trust-card { background: #fff; padding: 20px; border-radius: 15px; border: 1px solid #f1f5f9; text-align: center; }
+        .trust-card img { height: 55px; margin: 0 auto 12px; object-fit: contain; }
+
+        /* Ingredients & Steps */
         .step { display: flex; gap: 15px; margin-bottom: 25px; text-align: left;}
         .step-num { width: 34px; height: 34px; background: var(--brand); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; flex-shrink: 0; }
         .ingredient-list-img{margin:30px auto; max-width:280px; width: 85%; display: block;}
 
-        /* Contact Details (image_efb21a.png) */
+        /* Contact (image_efb21a.png) */
         .contact-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 25px; }
         .contact-box { background: #fff; padding: 30px 25px; border-radius: 12px; border: 1px solid #f1f5f9; display: flex; align-items: center; gap: 20px; text-align: left; }
         .contact-icon-svg { width: 45px; height: 45px; color: #333; flex-shrink: 0; }
@@ -123,18 +122,15 @@
         .faq-answer { display: none; padding-bottom: 20px; color: var(--text-body); line-height: 1.7; }
         .faq-item.active .faq-answer { display: block; }
 
-        /* Final CTA Section */
-        .final-cta-box{background: linear-gradient(145deg, #0f172a, #1e3a8a); border-radius:24px; padding:60px 30px; text-align:center; color:#fff;}
-
         /* Footer */
         .footer { background: #0f172a; color: #94a3b8; padding: 60px 20px; text-align: center; font-size: 0.8rem; }
         .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-bottom: 30px; font-weight: 600; color: #fff; }
         .footer-links a { cursor: pointer; text-decoration: none; }
 
-        /* Floating Cart Button */
-        .floating-cta { position: fixed; bottom: 30px; right: 25px; background: var(--cta); color: #fff; width: 65px; height: 65px; border-radius: 50%; display: none; align-items: center; justify-content: center; box-shadow: 0 8px 25px rgba(22, 163, 74, 0.4); z-index: 9999; animation: pulse 2s infinite; transition: 0.2s;}
+        /* Floating Button */
+        .floating-cta { position: fixed; bottom: 30px; right: 25px; background: var(--cta); color: #fff; width: 65px; height: 65px; border-radius: 50%; display: none; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(22, 163, 74, 0.4); z-index: 9999; animation: pulse 2s infinite; transition: 0.2s;}
         .floating-cta:hover { transform: scale(1.1); background: var(--cta-dark); }
-        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7); } 70% { box-shadow: 0 0 0 20px rgba(22, 163, 74, 0); } 100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); } }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(22, 163, 74, 0); } 100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); } }
 
         /* Modals */
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 100000; align-items: center; justify-content: center; padding: 20px; }
@@ -142,18 +138,18 @@
         .modal-content { background: #fff; border-radius: 20px; max-width: 650px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 40px; position: relative; }
         .modal-close { position: absolute; top: 20px; right: 20px; font-size: 2.5rem; color: #ccc; cursor: pointer; line-height: 0.5; }
 
-        /* Desktop Grid Refinement */
+        /* Desktop Optimization */
         @media(min-width: 768px) {
             .h1 { font-size: 3rem; text-align: left; }
             .h2 { font-size: 2.2rem; }
-            .hero-inner { flex-direction: row; text-align: left; gap: 60px; align-items: flex-start; }
+            .hero-inner { display: flex; flex-direction: row; text-align: left; gap: 60px; align-items: flex-start; }
             .hero-image-wrap { max-width: 440px; }
             .price-card { text-align: left; margin-left: 0; }
             .price-row { justify-content: flex-start; }
             .cta-primary { width: auto; padding: 20px 60px; }
             .trust-grid { grid-template-columns: repeat(4, 1fr); }
             .reviews-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-            .flex-block { flex-direction: row; text-align: left; align-items: center; }
+            .flex-block { flex-direction: row; text-align: left; }
             .flex-block.reverse { flex-direction: row-reverse; }
             .contact-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
             .site-header { padding: 25px 0; }
@@ -210,14 +206,14 @@
 </section>
 
 <!-- 4. Scientific Section -->
-<section class="sci-bar">
-    <div class="container">
-        <p class="sci-bar-label" style="font-size: 0.65rem; font-weight: 800; text-transform: uppercase; color: var(--brand-dark); margin-bottom: 20px; letter-spacing: 1px;">Referenced in Scientific & Health Publications</p>
+<section class="sci-bar" style="padding: 30px 0; background: #f1f5f9;">
+    <div class="container text-center">
+        <p style="font-size: 0.65rem; font-weight: 800; text-transform: uppercase; color: var(--brand-dark); margin-bottom: 20px; letter-spacing: 1px;">Referenced in Scientific & Health Publications</p>
         <img src="images/imgi_2_scientific-refs.png" alt="Scientific References" style="max-width: 650px; margin: 0 auto; opacity: 0.85;">
     </div>
 </section>
 
-<!-- 5. Testimonials (Fix: Character Alignment) -->
+<!-- 5. Testimonials (Fix: Names & Faces Corrected) -->
 <section class="section bg-gray">
     <div class="container text-center">
         <span class="section-badge">Verified Customer Stories</span>
@@ -256,15 +252,15 @@
     </div>
 </section>
 
-<!-- 6. Know Before Session (image_eecc4b) -->
+<!-- 6. Know Before Trying Session -->
 <section class="section bg-white">
     <div class="container">
         <div class="flex-block">
             <div class="flex-img-wrap">
-                <img src="images/image_eecc4b.jpg" alt="Product Insight" class="flex-img">
+                <img src="images/image_eecc4b.jpg" alt="Product Insight" class="flex-img" onerror="this.src='https://placehold.co/480x400?text=Product+Insight'">
             </div>
             <div class="flex-text">
-                <span class="attention-text">Information:</span>
+                <span class="attention-text">Important Insight:</span>
                 <h2 class="h2">What You Should Know Before Trying Free Sugar Pro</h2>
                 <div class="body-text">
                     <p>Free Sugar Pro is a <strong>daily metabolic support formula</strong> — not a quick fix or something extreme. It’s designed for people who feel their energy and internal balance are inconsistent even when they try to stay on track.</p>
@@ -286,23 +282,23 @@
             <p>Free Sugar Pro is produced in the United States in facilities that follow <strong>Good Manufacturing Practices (GMP)</strong> to help ensure purity, safety, and reliability.</p>
         </div>
         <div class="trust-grid">
-            <div class="trust-card"><img src="images/imgi_6_badge-usa.png" alt="USA"><strong>Made in USA</strong><p>Local & Global Ingredients.</p></div>
-            <div class="trust-card"><img src="images/imgi_7_badge-fda.png" alt="FDA"><strong>FDA Registered</strong><p>Certified Facility.</p></div>
-            <div class="trust-card"><img src="images/imgi_8_badge-gmp.png" alt="GMP"><strong>GMP Certified</strong><p>Strict Quality Control.</p></div>
-            <div class="trust-card"><img src="images/imgi_9_badge-natural.png" alt="Natural"><strong>100% Natural</strong><p>Liquid Metabolic Formula.</p></div>
+            <div class="trust-card"><img src="images/imgi_6_badge-usa.png" alt="USA"><strong>Made in USA</strong><p style="font-size:0.75rem">Local & Global Ingredients</p></div>
+            <div class="trust-card"><img src="images/imgi_7_badge-fda.png" alt="FDA"><strong>FDA Registered</strong><p style="font-size:0.75rem">Certified Facility</p></div>
+            <div class="trust-card"><img src="images/imgi_8_badge-gmp.png" alt="GMP"><strong>GMP Certified</strong><p style="font-size:0.75rem">Strict Quality Control</p></div>
+            <div class="trust-card"><img src="images/imgi_9_badge-natural.png" alt="Natural"><strong>100% Natural</strong><p style="font-size:0.75rem">Liquid Metabolic Formula</p></div>
         </div>
     </div>
 </section>
 
-<!-- 8. Simple Liquid habit Session -->
+<!-- 8. Simple Formula Designed for Daily Balance -->
 <section class="section bg-white">
     <div class="container">
         <div class="flex-block reverse">
             <div class="flex-img-wrap">
-                <img src="images/sugarfree.png" alt="Mechanism" class="flex-img">
+                <img src="images/sugarfree.png" alt="Mechanism" class="flex-img" onerror="this.src='https://placehold.co/480x400?text=Daily+Routine'">
             </div>
             <div class="flex-text">
-                <span class="attention-text">Daily Routine:</span>
+                <span class="attention-text">Information:</span>
                 <h2 class="h2">A Simple Liquid Formula Designed for Daily Balance</h2>
                 <div class="body-text">
                     <p>Free Sugar Pro was created to support your body’s natural glucose metabolism and energy balance. It’s designed to be simple:</p>
@@ -311,7 +307,7 @@
                         <li>No drastic lifestyle changes</li>
                         <li>Just a consistent daily habit</li>
                     </ul>
-                    <p>This is about support over time, not instant changes. Consistency is what makes the difference.</p>
+                    <p>This is about support over time, not instant changes. Consistency is what makes the difference for a smoother metabolic rhythm.</p>
                 </div>
                 <div style="margin-top: 25px;">
                     <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="cta-secondary">LEARN WHAT'S INSIDE →</a>
@@ -321,7 +317,7 @@
     </div>
 </section>
 
-<!-- 9. Supporting vs Forcing Session -->
+<!-- 9. Supporting vs Forcing Section -->
 <section class="section bg-gray">
     <div class="container text-center">
         <h2 class="h2">Why This Formula Focuses on Supporting — Not Forcing — Your Body</h2>
@@ -335,20 +331,11 @@
 <section class="section bg-white">
     <div class="container text-center">
         <h2 class="h2">The Key Ingredients Behind the Formula</h2>
-        <img src="images/imgi_2_FSP_Mockup_02.png" alt="Ingredients" class="ingredient-list-img">
+        <img src="images/imgi_2_FSP_Mockup_02.png" alt="Ingredients" class="ingredient-list-img" onerror="this.src='https://placehold.co/300x400?text=Ingredients+Mockup'">
         <div style="max-width: 600px; margin: 30px auto; text-align: left;">
-            <div class="step" style="display:flex; gap:15px; margin-bottom:20px;">
-                <div class="step-num">1</div>
-                <div class="body-text"><strong>Chromium:</strong> Commonly linked to glucose metabolism and nutrient processing.</div>
-            </div>
-            <div class="step" style="display:flex; gap:15px; margin-bottom:20px;">
-                <div class="step-num">2</div>
-                <div class="body-text"><strong>Maca Root:</strong> Traditionally associated with energy, vitality, and balance.</div>
-            </div>
-            <div class="step" style="display:flex; gap:15px;">
-                <div class="step-num">3</div>
-                <div class="body-text"><strong>GABA:</strong> Connected to relaxation and helping maintain equilibrium.</div>
-            </div>
+            <div class="step"><div class="step-num">1</div><div class="body-text"><strong>Chromium:</strong> Commonly linked to glucose metabolism and nutrient processing.</div></div>
+            <div class="step"><div class="step-num">2</div><div class="body-text"><strong>Maca Root:</strong> Traditionally associated with energy, vitality, and daily balance.</div></div>
+            <div class="step"><div class="step-num">3</div><div class="body-text"><strong>GABA:</strong> Connected to relaxation and helping maintain internal equilibrium.</div></div>
         </div>
         <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="cta-secondary">SEE FULL PRODUCT DETAILS</a>
     </div>
@@ -357,11 +344,11 @@
 <!-- 11. Guarantee Section -->
 <section class="section bg-soft">
     <div class="container">
-        <div class="guarantee-wrap">
-            <img src="images/imgi_13_guarantee-badge.png" alt="Guarantee" class="guarantee-badge-img">
-            <div class="guarantee-text">
+        <div class="flex-block">
+            <img src="images/imgi_13_guarantee-badge.png" alt="Guarantee" style="width: 150px;" onerror="this.src='https://placehold.co/150x150?text=60+Days'">
+            <div class="text-center">
                 <h3 class="h2">60-Day Window to Try It With Peace of Mind</h3>
-                <p class="body-text" style="font-size: 1.1rem;">Starting something new can feel uncertain. That’s why Free Sugar Pro comes with a <strong>60-day satisfaction policy</strong>. Observe how your body responds over time. No pressure.</p>
+                <p class="body-text" style="font-size: 1.1rem;">Starting something new can feel uncertain. That’s why Free Sugar Pro comes with a <strong>60-day satisfaction policy</strong>. Observe how your body responds. No pressure.</p>
                 <div style="margin-top: 25px;">
                     <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="cta-primary">VIEW CURRENT OFFER →</a>
                 </div>
@@ -374,67 +361,68 @@
 <section class="section bg-white">
     <div class="container">
         <h2 class="h2 text-center">Common Questions</h2>
-        <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-list" style="max-width: 850px; margin: 0 auto;">
             <div class="faq-item">
-                <div class="faq-question"><span>Is Free Sugar Pro a medication?</span><span>+</span></div>
-                <div class="faq-answer">No. It’s a dietary supplement designed to support daily wellness and metabolic balance naturally using recognized botanical extracts.</div>
+                <button class="faq-question"><span>Is Free Sugar Pro a medication?</span><span>+</span></button>
+                <div class="faq-answer">No. It’s a dietary supplement designed to support daily wellness and metabolic balance naturally using recognized extracts.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question"><span>Is it capsules or liquid drops?</span><span>+</span></div>
-                <div class="faq-answer">Free Sugar Pro is a liquid formula. This allows for faster absorption and is much easier to take than large pills or capsules.</div>
+                <button class="faq-question"><span>Is it capsules or liquid drops?</span><span>+</span></button>
+                <div class="faq-answer">Free Sugar Pro is a liquid formula. This allows for faster absorption and is much easier to take than large pills.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question"><span>How long until I notice results?</span><span>+</span></div>
-                <div class="faq-answer">Reports indicate changes within a few weeks. However, results vary based on routine. We recommend at least 60-90 days for full adjustment.</div>
+                <button class="faq-question"><span>How long until I notice results?</span><span>+</span></button>
+                <div class="faq-answer">Reports indicate changes within a few weeks. Consistency is key. We recommend at least 60-90 days for full adjustment.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question"><span>Do I need to change my lifestyle?</span><span>+</span></div>
+                <button class="faq-question"><span>Do I need to change my lifestyle?</span><span>+</span></button>
                 <div class="faq-answer">It works best with balanced habits, but it's designed to fit into real life without complex restrictions.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question"><span>How does the guarantee work?</span><span>+</span></div>
-                <div class="faq-answer">Try it for 60 days. If you're not satisfied for any reason, simply contact support for a full refund of your purchase price.</div>
+                <button class="faq-question"><span>How does the guarantee work?</span><span>+</span></button>
+                <div class="faq-answer">Try it for 60 days. If you're not satisfied for any reason, simply contact support for a full refund.</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 13. Final CTA Session -->
-<section class="section bg-dark-section" style="background: linear-gradient(145deg, #0f172a, #1e3a8a); color: #fff; text-align: center; border-radius: 30px; margin: 40px 20px; padding: 70px 20px;">
+<!-- 13. Final CTA -->
+<section class="section" style="background: linear-gradient(145deg, #0f172a, #1e3a8a); color: #fff; text-align: center; border-radius: 30px; margin: 40px 20px; padding: 70px 20px;">
     <div class="container">
-        <h2 class="h2" style="color: #fff">It's About Feeling Like Yourself Again.</h2>
-        <p style="color: #cbd5e1; margin-bottom: 40px; font-size: 1.1rem;">Support your body differently. No hype. No pressure. Just consistent daily support.</p>
-        <img src="images/imgi_6_3bottles.png" alt="Free Sugar Pro Bottles" style="max-width: 250px; margin: 0 auto 30px;">
+        <h2 class="h2" style="color: #fff">Feel Like Yourself Again.</h2>
+        <p style="color: #cbd5e1; margin-bottom: 40px;">Support your body differently. No hype. No pressure. Just consistent daily support.</p>
+        <img src="images/imgi_6_3bottles.png" alt="Free Sugar Pro" style="max-width: 250px; margin: 0 auto 35px;">
         <div class="price-row">
             <span style="font-size: 1.2rem; color: #94a3b8; text-decoration: line-through;">$1074</span>
             <span class="price-current" style="color: #fff">$294</span>
         </div>
         <p style="font-weight: 800; color: #fff; margin-bottom: 25px; font-size: 1.1rem;">Only $49 per bottle!</p>
-        <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="cta-primary" style="background: #fff; color: var(--text-dark);">CHECK TODAY'S AVAILABILITY</a>
+        <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="cta-primary" style="background: #fff; color: var(--brand-dark);">CHECK TODAY'S AVAILABILITY</a>
         <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 25px;">60-DAY MONEY BACK GUARANTEE · SECURE CHECKOUT · ONE-TIME PURCHASE</p>
     </div>
 </section>
 
-<!-- 14. Contact Info Session (image_efb21a) -->
+<!-- 14. Contact Us (image_efb21a.png exact match) -->
 <section class="section bg-gray">
     <div class="container text-center">
         <h2 class="h2">Contact Us</h2>
         <div class="contact-grid">
             <div class="contact-box">
-                <svg class="contact-icon-svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path></svg>
+                <svg class="contact-icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path></svg>
                 <div class="contact-info">
                     <strong>Product Email Support</strong>
                     <span>freesugar@bestcsupport.com</span>
                 </div>
             </div>
             <div class="contact-box">
-                <svg class="contact-icon-svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                <svg class="contact-icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                 <div class="contact-info">
                     <strong>Order Support - Toll Free</strong>
                     <span>+1 (720) 513-3306 - 24/7</span>
                 </div>
             </div>
         </div>
+        <p style="margin-top: 30px; font-size: 0.85rem; color: #888;">We aim to respond to all inquiries within 24–48 hours.</p>
     </div>
 </section>
 
@@ -453,15 +441,24 @@
 
 <!-- Floating Green Cart Button -->
 <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="floating-cta" id="floatingCta">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="30" height="30"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="28"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
 </a>
 
 <!-- Modals -->
 <div id="modal-privacy" class="modal" onclick="if(event.target===this)closeModal('privacy')">
-    <div class="modal-content"><span class="modal-close" onclick="closeModal('privacy')">&times;</span><h3 class="h2">Privacy Policy</h3><p class="body-text" style="text-align: left;">Your privacy is important to us. We collect information to improve experience and process orders safely. We never sell your personal data.</p></div>
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('privacy')">&times;</span>
+        <h3 class="h2">Privacy Policy</h3>
+        <p class="body-text" style="text-align: left;">Your privacy is important to us. We collect information to improve experience and process orders safely. We never sell your personal data.</p>
+    </div>
 </div>
+
 <div id="modal-terms" class="modal" onclick="if(event.target===this)closeModal('terms')">
-    <div class="modal-content"><span class="modal-close" onclick="closeModal('terms')">&times;</span><h3 class="h2">Terms of Service</h3><p class="body-text" style="text-align: left;">By using this site, you agree to our terms. This site provides informational content, not medical advice. Supplements are not intended to cure any disease.</p></div>
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('terms')">&times;</span>
+        <h3 class="h2">Terms of Service</h3>
+        <p class="body-text" style="text-align: left;">By using this site, you agree to our terms. This site provides informational content, not medical advice.</p>
+    </div>
 </div>
 
 <script>
@@ -472,12 +469,10 @@
             const isActive = item.classList.contains('active');
             document.querySelectorAll('.faq-item').forEach(el => {
                 el.classList.remove('active');
-                el.querySelector('.faq-answer').style.display = 'none';
                 el.querySelector('span:last-child').textContent = '+';
             });
             if (!isActive) {
                 item.classList.add('active');
-                item.querySelector('.faq-answer').style.display = 'block';
                 item.querySelector('span:last-child').textContent = '-';
             }
         });
@@ -486,10 +481,10 @@
     // Floating Button Logic
     const cta = document.getElementById('floatingCta');
     window.addEventListener('scroll', () => {
-        cta.style.display = window.scrollY > 800 ? 'flex' : 'none';
+        cta.style.display = window.scrollY > 1000 ? 'flex' : 'none';
     }, {passive: true});
 
-    // Modals Logic
+    // Modal Controls
     function openModal(id) {
         document.getElementById('modal-' + id).classList.add('open');
         document.body.style.overflow = 'hidden'; 
