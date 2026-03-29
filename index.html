@@ -102,7 +102,7 @@
         .site-header { background: var(--brand-header); padding: 15px 0; border-bottom: 1px solid rgba(0,0,0,0.05); text-align: center; }
         .logo { max-width: 130px; margin: 0 auto; }
 
-        /* Offer Card */
+        /* Offer Card (Hero) */
         .offer-card { background: #f0fdf4; border: 2px solid #bbf7d0; border-radius: 16px; padding: 25px; margin-top: 25px; text-align: center; box-shadow: var(--shadow-soft); }
         .price-hero-flex { display: flex; align-items: baseline; justify-content: center; gap: 8px; margin-bottom: 15px; }
         .price-large { font-family: 'Merriweather', serif; font-size: 3.5rem; font-weight: 900; color: #15803d; line-height: 1; }
@@ -121,7 +121,6 @@
         .stars { display: flex; justify-content: center; gap: 3px; color: var(--star-gold); margin-bottom: 8px; }
 
         .hero-img { max-width: 260px; }
-        /* ARREGO MOBILE SCI-REFS (Ajuste solicitado) */
         .sci-refs-img { width: 100%; max-width: 300px; opacity: 0.85; }
         .mechanism-img { max-width: 280px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
         .ing-list-img { max-width: 230px; }
@@ -133,7 +132,12 @@
         .step { display: flex; gap: 12px; margin-bottom: 20px; text-align: left;}
         .step-num { width: 32px; height: 32px; background: var(--brand-primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; flex-shrink: 0; }
 
+        /* SESSÃO FINAL - AJUSTE SOLICITADO: Foto -> Preço -> Botão */
         .final-hero { background: linear-gradient(145deg, #0f172a, #1e3a8a); border-radius: 20px; padding: 50px 20px; text-align: center; color: #fff; margin-top: 30px; }
+        .final-price-display { margin: 25px 0; }
+        .final-price-large { font-family: 'Merriweather', serif; font-size: 3.5rem; font-weight: 900; color: #fff; line-height: 1; }
+        .final-price-label { font-weight: 800; color: #fff; font-size: 1.2rem; display: block; margin-top: 5px; }
+        
         .btn-white { background: #fff; color: var(--brand-dark); font-weight: 800; font-size: 0.95rem; padding: 16px 30px; border-radius: 10px; text-transform: uppercase; box-shadow: 0 8px 25px rgba(0,0,0,0.2); width: 100%; max-width: 350px; display: inline-block; transition: 0.2s; }
         .btn-white:hover { transform: scale(1.05); }
 
@@ -150,6 +154,7 @@
         .floating-btn { position: fixed; bottom: 25px; right: 20px; background: var(--cta-green); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: none; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(22, 163, 74, 0.45); z-index: 999; animation: pulse 2s infinite; }
         @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7); } 70% { box-shadow: 0 0 0 12px rgba(22, 163, 74, 0); } 100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); } }
 
+        /* DESKTOP REFINEMENT */
         @media(min-width: 768px) {
             .h1 { font-size: 3rem; text-align: left; }
             .h2 { font-size: 2.2rem; }
@@ -168,6 +173,10 @@
             .ing-list-img { max-width: 320px; }
             .logo { max-width: 170px; }
             .final-hero { padding: 80px 30px; }
+            
+            /* SESSÃO FINAL VERTICAL CENTRALIZADA (Desktop) */
+            .final-hero-content { display: flex; flex-direction: column; align-items: center; }
+            .final-price-large { font-size: 4.5rem; }
         }
 
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 100000; align-items: center; justify-content: center; padding: 20px; }
@@ -186,13 +195,13 @@
     </div>
 </header>
 
-<!-- SESSÃO 1: Hero -->
+<!-- SESSÃO 1: Hero (Preço Simplificado $49) -->
 <section class="section bg-white" style="padding-top: 40px;">
     <div class="container">
         <div class="flex-grid">
             <div class="hero-img-container">
                 <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9">
-                    <img src="images/imgi_6_3bottles.png" alt="Free Sugar Pro Selection" class="hero-img">
+                    <img src="images/imgi_6_3bottles.png" alt="Free Sugar Pro Official Selection" class="hero-img">
                 </a>
             </div>
             <div style="flex: 1;">
@@ -218,15 +227,15 @@
     </div>
 </section>
 
-<!-- SESSÃO 2: Logótipos Científicos (Ajuste mobile solicitado aplicado aqui) -->
+<!-- SESSÃO 2: Logótipos Científicos -->
 <section class="section bg-gray" style="padding: 25px 0;">
     <div class="container text-center">
         <p style="font-size: 0.65rem; font-weight: 800; text-transform: uppercase; color: var(--brand-dark); margin-bottom: 15px; letter-spacing: 1px;">Referenced in Scientific & Health Publications</p>
-        <img src="images/imgi_2_scientific-refs.png" alt="Scientific Authorities" class="sci-refs-img">
+        <img src="images/imgi_2_scientific-refs.png" alt="Trust Badges" class="sci-refs-img">
     </div>
 </section>
 
-<!-- SESSÃO 3: Testemunhos (Fotos Corretas Sarah=Mulher, Mark=Homem, Elena=Mulher) -->
+<!-- SESSÃO 3: Testemunhos (Fotos Corretas) -->
 <section class="section bg-soft">
     <div class="container text-center">
         <span class="badge">Verified Customer Stories</span>
@@ -296,7 +305,7 @@
         <h2 class="h2">Built Under Strict Quality & Safety Standards</h2>
         <p class="body-text" style="max-width: 800px; margin: 0 auto 35px;">Free Sugar Pro is produced in the United States in facilities that follow <strong>Good Manufacturing Practices (GMP)</strong> to help ensure purity, safety, and reliability.</p>
         <div class="trust-grid">
-            <div class="trust-box"><img src="images/imgi_6_badge-usa.png" alt="Made in USA Badge"><strong>Made in USA</strong><p style="font-size:0.75rem">Local & Global Ingredients</p></div>
+            <div class="trust-box"><img src="images/imgi_6_badge-usa.png" alt="USA Badge"><strong>Made in USA</strong><p style="font-size:0.75rem">Local & Global Ingredients</p></div>
             <div class="trust-box"><img src="images/imgi_7_badge-fda.png" alt="FDA Badge"><strong>FDA Registered</strong><p style="font-size:0.75rem">Certified Facility</p></div>
             <div class="trust-box"><img src="images/imgi_8_badge-gmp.png" alt="GMP Badge"><strong>GMP Certified</strong><p style="font-size:0.75rem">Strict Quality Control</p></div>
             <div class="trust-box"><img src="images/imgi_9_badge-natural.png" alt="Natural Badge"><strong>100% Natural</strong><p style="font-size:0.75rem">Liquid Metabolic Formula</p></div>
@@ -307,8 +316,8 @@
 <!-- SESSÃO 6: Simple Liquid Habit -->
 <section class="section bg-white">
     <div class="container">
-        <div class="mechanism-flex" style="display: flex; flex-direction: column; gap: 40px; align-items: center;">
-            <div style="width: 100%; max-width: 480px; text-align: center;">
+        <div class="mechanism-flex">
+            <div style="flex: 1; text-align: center;">
                 <img src="images/sugarfree.png" alt="Daily Protocol visualization" class="mechanism-img">
             </div>
             <div style="flex: 1;">
@@ -383,22 +392,29 @@
     </div>
 </section>
 
-<!-- SESSÃO 11: Oferta Final (Foco no $49) -->
+<!-- SESSÃO 11: Oferta Final (ALINHAMENTO DESKTOP: Foto -> Preço -> Botão) -->
 <section class="final-hero">
     <div class="container">
-        <h2 class="h2" style="color: #fff; font-size: 2.8rem; margin-bottom: 10px;">Feel like yourself again.</h2>
-        <p style="color: #cbd5e1; font-size: 1.15rem; margin-bottom: 45px;">Support your body differently. No hype. No pressure. Just consistent daily support.</p>
-        
-        <img src="images/imgi_6_3bottles.png" alt="Triple Selection Selection" style="max-width: 250px; margin: 0 auto 35px;">
-        
-        <div class="price-hero-flex" style="margin-bottom: 25px;">
-            <span style="font-family: 'Merriweather', serif; font-size: 4.5rem; font-weight: 900; color: #fff; line-height: 1;">$49</span>
-            <span style="font-weight: 800; color: #fff; font-size: 1.3rem;">per bottle!</span>
+        <div class="final-hero-content">
+            <h2 class="h2" style="color: #fff; font-size: 2.8rem; margin-bottom: 10px;">Feel like yourself again.</h2>
+            <p style="color: #cbd5e1; font-size: 1.15rem; margin-bottom: 40px;">Support your body differently. No hype. No pressure. Just consistent daily support.</p>
+            
+            <!-- Foto -->
+            <img src="images/imgi_6_3bottles.png" alt="Complete Triple Pack Bundle" style="max-width: 250px; margin: 0 auto;">
+            
+            <!-- Preço (Depois da foto) -->
+            <div class="final-price-display">
+                <span class="final-price-large">$49</span>
+                <span class="final-price-label">per bottle!</span>
+            </div>
+            
+            <!-- Botão (Depois do preço) -->
+            <div class="final-button-wrap">
+                <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="btn-white">VERIFY TODAY'S AVAILABILITY</a>
+            </div>
+            
+            <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 35px;">60-day money-back guarantee · Secure payment · One-time purchase</p>
         </div>
-        
-        <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="btn-white">VERIFY TODAY'S AVAILABILITY</a>
-        
-        <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 35px;">60-day money-back guarantee · Secure payment · One-time purchase</p>
     </div>
 </section>
 
@@ -429,7 +445,7 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="28"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
 </a>
 
-<!-- Conteúdo dos Modais -->
+<!-- Modais -->
 <div id="modal-privacy" class="modal" onclick="if(event.target===this)closeModal('privacy')">
     <div class="modal-body"><span class="modal-close" onclick="closeModal('privacy')">&times;</span><h3 class="h2">Privacy Policy</h3><p class="body-text" style="text-align: left; font-size: 0.95rem;">Your privacy is important to us. We collect information to improve experience and process orders safely. We never sell your personal data.</p></div>
 </div>
@@ -456,11 +472,9 @@
         });
     });
 
-    // Visibilidade do botão flutuante
     const floatBtn = document.getElementById('floatBtn');
     window.addEventListener('scroll', () => { floatBtn.style.display = window.scrollY > 1000 ? 'flex' : 'none'; }, {passive: true});
 
-    // Funções de Modal
     function openModal(id) { document.getElementById('modal-' + id).classList.add('open'); document.body.style.overflow = 'hidden'; }
     function closeModal(id) { document.getElementById('modal-' + id).classList.remove('open'); document.body.style.overflow = 'auto'; }
 </script>
