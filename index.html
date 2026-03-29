@@ -67,16 +67,16 @@
         .body-text p{margin-bottom:16px}
         .eyebrow{font-size:.75rem;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
 
-        /* Barra de Oferta no Topo */
+        /* Top Offer Bar */
         .offer-bar{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 50%,#2563eb 100%);color:#fff;padding:10px 16px}
         .offer-bar-inner{max-width:768px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 24px}
         .offer-bar-item{display:flex;align-items:center;gap:6px;font-weight:700;font-size:.75rem}
         .offer-bar-item svg{width:16px;height:16px}
 
-        /* Cabeçalho */
+        /* Site Header */
         .site-header {
             background: #fff;
-            padding: 20px 0;
+            padding: 15px 0;
             border-bottom: 1px solid #f1f5f9;
             text-align: center;
         }
@@ -86,7 +86,7 @@
             display: block;
         }
 
-        /* Secção Hero */
+        /* Hero Section */
         .hero{padding:32px 0 48px 0;background:var(--bg-white)}
         .hero-inner{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:32px}
         .hero-img{width:100%;max-width:320px;margin:0 auto;filter:drop-shadow(0 8px 20px rgba(0,0,0,.08))}
@@ -94,15 +94,16 @@
 
         .price-card{margin-top:24px;padding:20px;background:#f0fdf4;border-radius:12px;border:1px solid #bbf7d0}
         .price-label{font-family:'Merriweather',serif;font-size:.85rem;font-weight:700;color:#15803d;margin-bottom:8px}
-        .price-row{display:flex;align-items:baseline;justify-content: center;gap:10px;margin-bottom:16px}
+        .price-row{display:flex;align-items:baseline;justify-content: center;gap:10px;margin-bottom:12px}
         .price-original{font-size:1rem;color:var(--text-light);text-decoration:line-through}
         .price-current{font-size:2.25rem;font-weight:900;color:#15803d;line-height:1;font-family:'Merriweather',serif}
         .price-badge{background:#dc2626;color:#fff;font-size:.65rem;font-weight:700;padding:3px 8px;border-radius:99px}
-        .per-bottle-label{display:block; font-size: 0.85rem; color: #15803d; font-weight: 700; margin-top: -5px; margin-bottom: 15px;}
+        .per-bottle-label{display:block; font-size: 0.9rem; color: #15803d; font-weight: 800; margin-bottom: 15px;}
 
-        /* Botões */
-        .cta-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--cta);color:#fff;font-weight:800;font-size:1rem;padding:18px 24px;border-radius:10px;transition:all .2s;width:100%;max-width:400px;text-align:center;box-shadow:0 4px 12px rgba(22,163,74,.2)}
+        /* Unified Button Sizing */
+        .cta-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--cta);color:#fff;font-weight:800;font-size:1rem;padding:16px 24px;border-radius:10px;transition:all .2s;width:100%;max-width:380px;text-align:center;box-shadow:0 4px 12px rgba(22,163,74,.2)}
         .cta-primary:hover{background:var(--cta-dark);transform:translateY(-2px)}
+        .cta-primary svg{width:20px;height:20px;flex-shrink:0}
         
         .cta-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--cta-secondary);color:#000;font-weight:700;font-size:.9rem;padding:14px 28px;border-radius:10px;transition:all .2s;width:100%;max-width:320px}
         .cta-secondary:hover{background:#eab308}
@@ -133,7 +134,8 @@
         .step{display:flex;gap:16px;margin-bottom:20px;align-items:flex-start}
         .step-num{background:var(--brand);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;flex-shrink:0}
 
-        .ingredient-list-img{margin:24px auto;max-width:320px; width: 80%; display: block}
+        /* Ingredient image size correction */
+        .ingredient-list-img{margin:24px auto;max-width:280px; width: 80%; display: block}
         .ingredient-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid #f1f5f9}
         .ingredient-num{background:var(--brand);color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.75rem;flex-shrink:0;margin-top:2px}
 
@@ -153,8 +155,9 @@
 
         .final-cta-box{background:var(--bg-dark);border-radius:20px;padding:40px 20px;text-align:center;color:#fff}
 
-        /* Secção da Seta Grande */
-        .arrow-section {background: #004d2c; padding: 40px 0; color: #fff; text-align: center; cursor: pointer; text-decoration: none; display: block}
+        /* Large Arrow Section */
+        .arrow-section {background: #004d2c; padding: 40px 0; color: #fff; text-align: center; cursor: pointer; text-decoration: none; display: block; transition: background 0.3s;}
+        .arrow-section:hover {background: #006339;}
         .arrow-container {display: flex; align-items: center; justify-content: center; gap: 20px}
         .arrow-text {font-size: 1.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px}
         .big-arrow {font-size: 4rem; font-weight: 300; line-height: 1}
@@ -166,8 +169,8 @@
         .floating-cta{position:fixed;bottom:20px;right:20px;background:var(--cta);color:#fff;font-weight:700;font-size:.85rem;padding:14px 24px;border-radius:30px;box-shadow:0 6px 15px rgba(0,0,0,0.3);z-index:100;display:none;align-items:center;gap:8px}
 
         @media(min-width:768px){
-            .site-header { padding: 30px 0; }
-            .header-logo { max-width: 180px; }
+            .site-header { padding: 25px 0; }
+            .header-logo { max-width: 170px; }
             .section{padding:72px 0}
             .h1{font-size:2.5rem; text-align: left}
             .hero-inner{flex-direction:row;align-items:flex-start;gap:60px}
@@ -176,7 +179,6 @@
             .price-card{text-align: left}
             .price-row{justify-content: flex-start}
             .cta-primary{width: auto; padding: 20px 60px}
-            .cta-secondary{width: auto}
             .trust-grid{grid-template-columns:repeat(4,1fr); gap:20px}
             .reviews-grid{grid-template-columns:repeat(3,1fr)}
             .works-wrap{flex-direction:row;align-items:flex-start; gap:48px}
@@ -184,13 +186,13 @@
             .steps{width:55%}
             .guarantee-wrap{flex-direction:row;text-align:left;padding:60px; gap:40px}
             .final-cta-box{padding:60px}
-            .ingredient-list-img{max-width:320px}
+            .ingredient-list-img{max-width:300px}
         }
     </style>
 </head>
 <body>
 
-<!-- 1. Barra de Oferta (Topo) -->
+<!-- 1. Top Offer Bar -->
 <div class="offer-bar">
     <div class="offer-bar-inner">
         <div class="offer-bar-item">
@@ -204,20 +206,20 @@
     </div>
 </div>
 
-<!-- 2. Cabeçalho -->
+<!-- 2. Header with Logo -->
 <header class="site-header">
     <div class="container">
         <img src="images/imgi_1_FSP_Black@4x.png" alt="Free Sugar Pro Logo" class="header-logo">
     </div>
 </header>
 
-<!-- 3. Secção Hero -->
+<!-- 3. Hero Section -->
 <section class="hero">
     <div class="container-wide">
         <div class="hero-inner">
             <div class="hero-img-wrap">
                 <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9">
-                    <img src="images/imgi_6_3bottles.png" alt="Free Sugar Pro Oferta Gotas" class="hero-img">
+                    <img src="images/imgi_6_3bottles.png" alt="Free Sugar Pro Gotas" class="hero-img">
                 </a>
             </div>
 
@@ -227,7 +229,7 @@
 
                 <div class="body-text mt-24">
                     <p>Você corta o açúcar. Tenta comer de forma limpa. Mas sua energia ainda cai... e seu corpo não parece estável.</p>
-                    <p>O <strong>Free Sugar Pro</strong> é uma fórmula líquida de suporte metabólico diário focada no equilíbrio natural em gotas.</p>
+                    <p>O <strong>Free Sugar Pro</strong> é uma fórmula líquida concentrada, focada na absorção rápida para suporte metabólico diário.</p>
                 </div>
 
                 <div class="price-card mt-28">
@@ -235,7 +237,7 @@
                     <div class="price-row">
                         <span class="price-original">$1074</span>
                         <span class="price-current">$294</span>
-                        <span class="price-badge">BEST VALUE</span>
+                        <span class="price-badge">MELHOR VALOR</span>
                     </div>
                     <span class="per-bottle-label">Apenas $49 por frasco!</span>
                     <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="cta-primary">
@@ -281,13 +283,13 @@
             <div class="review-card">
                 <img src="https://i.pravatar.cc/150?u=mark" alt="Mark D." class="review-photo" loading="lazy">
                 <p class="review-verified">Compra Verificada</p>
-                <p class="review-text">"Não é um milagre da noite para o dia, mas a consistência valeu a pena."</p>
+                <p class="review-text">"Não é um milagre da noite para o dia, mas a consistência valeu a pena. Me sinto muito mais equilibrado."</p>
                 <p style="font-weight: 700; font-size: 0.85rem; color: var(--text-dark)">Mark D. — Miami, FL</p>
             </div>
             <div class="review-card">
                 <img src="https://i.pravatar.cc/150?u=elena" alt="Elena R." class="review-photo" loading="lazy">
                 <p class="review-verified">Compra Verificada</p>
-                <p class="review-text">"Amei que se encaixa na minha rotina normal. Apenas algumas gotas por dia."</p>
+                <p class="review-text">"Amei que se encaixa na minha rotina normal. Apenas algumas gotas por dia e meu metabolismo agradece."</p>
                 <p style="font-weight: 700; font-size: 0.85rem; color: var(--text-dark)">Elena R. — Seattle, WA</p>
             </div>
         </div>
@@ -364,31 +366,31 @@
     </div>
 </section>
 
-<section class="section bg-gray">
-    <div class="container text-center">
+<section class="section bg-gray text-center">
+    <div class="container">
         <h2 class="section-badge-full">Ingredientes de Alta Potência</h2>
-        <img src="images/imgi_2_FSP_Mockup_02.png" alt="Ingredientes Free Sugar Pro" class="ingredient-list-img">
+        <img src="images/imgi_2_FSP_Mockup_02.png" alt="Ingredientes" class="ingredient-list-img">
 
         <div class="ingredient-list" style="text-align: left; max-width: 500px; margin: 0 auto">
             <div class="ingredient-item">
                 <span class="ingredient-num">1</span>
                 <div>
                     <strong>Cromo (Chromium)</strong>
-                    <p style="font-size: 0.85rem;">Essencial para o processamento eficiente de carboidratos e nutrientes.</p>
+                    <p style="font-size: 0.85rem;">Essencial para o processamento eficiente de nutrientes.</p>
                 </div>
             </div>
             <div class="ingredient-item">
                 <span class="ingredient-num">2</span>
                 <div>
                     <strong>Raiz de Maca (Maca Root)</strong>
-                    <p style="font-size: 0.85rem;">Fonte natural de vitalidade e suporte para o equilíbrio diário.</p>
+                    <p style="font-size: 0.85rem;">Fonte natural de vitalidade e vigor diário.</p>
                 </div>
             </div>
             <div class="ingredient-item">
                 <span class="ingredient-num">3</span>
                 <div>
                     <strong>GABA</strong>
-                    <p style="font-size: 0.85rem;">Auxilia na manutenção do equilíbrio interno e redução do estresse metabólico.</p>
+                    <p style="font-size: 0.85rem;">Auxilia na manutenção do equilíbrio interno natural.</p>
                 </div>
             </div>
         </div>
@@ -401,7 +403,7 @@
             <img src="images/imgi_13_guarantee-badge.png" alt="Garantia" class="guarantee-badge-img">
             <div class="guarantee-text">
                 <h3 class="guarantee-title">60-Day Money Back Guarantee</h3>
-                <p class="body-text">O Free Sugar Pro oferece risco zero. Use as gotas diariamente por 60 dias. Se não estiver satisfeito, devolvemos seu dinheiro integralmente.</p>
+                <p class="body-text">O Free Sugar Pro oferece risco zero. Use as gotas por 60 dias. Se não estiver satisfeito, devolvemos seu dinheiro integralmente.</p>
                 <div class="mt-24 text-center">
                     <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="cta-secondary">
                         Verificar Oferta Atual →
@@ -446,17 +448,17 @@
             <h2 class="h1" style="color: #fff; margin-bottom: 12px; text-align: center">Equilibre seu metabolismo hoje.</h2>
             <p style="color: #cbd5e1; margin-bottom: 32px">Fórmula líquida de alta absorção. 60-Day Money Back. Sem assinaturas.</p>
 
-            <img src="images/imgi_6_3bottles.png" alt="Frascos Free Sugar Pro" class="final-cta-img" style="margin: 0 auto 24px; max-width: 220px;">
+            <img src="images/imgi_6_3bottles.png" alt="Frascos" class="final-cta-img" style="margin: 0 auto 24px; max-width: 220px;">
 
             <div class="final-price-row">
                 <span style="font-size: 1rem; color: #94a3b8; text-decoration: line-through;">$1074</span>
                 <span class="final-price-curr">$294</span>
                 <span style="background: #dc2626; padding: 4px 10px; border-radius: 99px; font-size: 0.65rem">SAVE $780</span>
             </div>
-            <span style="display: block; font-weight: 800; color: #fff; margin-top: -15px; margin-bottom: 20px;">Apenas $49 por frasco!</span>
+            <span style="display: block; font-weight: 800; color: #fff; margin-bottom: 20px;">Apenas $49 por frasco!</span>
 
             <div class="text-center">
-                <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="cta-primary" style="margin-top: 24px;">
+                <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="cta-primary">
                     CONFERIR DISPONIBILIDADE NO SITE OFICIAL
                 </a>
             </div>
@@ -464,7 +466,7 @@
     </div>
 </section>
 
-<!-- Seção Visual da Seta Grande -->
+<!-- Final Arrow Section -->
 <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="arrow-section">
     <div class="arrow-container">
         <span class="arrow-text">Ir para o Site Oficial</span>
@@ -477,8 +479,8 @@
         <p>Aviso FDA: Estas declarações não foram avaliadas pela FDA. Este produto não se destina a tratar ou curar doenças.</p>
         <hr style="border: none; border-top: 1px solid #1e293b; margin: 24px 0;">
         <div class="footer-links">
-            <a href="#" onclick="openModal('privacy');return false">Privacidade</a>
-            <a href="#" onclick="openModal('terms');return false">Termos</a>
+            <a href="#" onclick="openModal();return false">Privacidade</a>
+            <a href="#" onclick="openModal();return false">Termos</a>
             <a href="mailto:support@freesugarpro.com">Contato</a>
         </div>
         <p style="margin-top: 20px;">&copy; 2026 Free Sugar Pro. Todos os Direitos Reservados.</p>
@@ -488,14 +490,6 @@
 <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="floating-cta" id="floatingCta">
     Verificar Disponibilidade
 </a>
-
-<div id="modal-privacy" class="modal" onclick="if(event.target===this)this.classList.remove('open')">
-    <div class="modal-content">
-        <span class="modal-close" onclick="this.parentElement.parentElement.classList.remove('open')">&times;</span>
-        <h2 style="font-size: 1.15rem; margin-bottom: 12px">Informações Legais</h2>
-        <p style="font-size: 0.85rem">Políticas disponíveis no checkout oficial.</p>
-    </div>
-</div>
 
 <script>
     // FAQ Toggle
@@ -508,14 +502,14 @@
         });
     });
 
-    // Floating CTA
+    // Floating CTA visibility
     const cta = document.getElementById('floatingCta');
     window.addEventListener('scroll', () => {
         cta.style.display = window.scrollY > 800 ? 'flex' : 'none';
     }, {passive: true});
 
-    function openModal(type) {
-        document.getElementById('modal-privacy').classList.add('open');
+    function openModal() {
+        alert("Políticas disponíveis no checkout oficial.");
     }
 </script>
 
