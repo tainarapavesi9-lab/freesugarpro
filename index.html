@@ -24,17 +24,18 @@
         :root {
             --brand-primary: #2563eb;
             --brand-dark:    #1e3a8a;
-            --brand-soft:    #BEE1F5; 
+            --brand-header:  #BEE1F5; 
             --cta-green:     #16a34a;
             --cta-hover:     #15803d;
             --accent-yellow: #facc15;
             --text-main:     #0f172a;
             --text-body:     #374151;
             --text-light:    #64748b;
-            --bg-white:      #ffffff;
             --bg-gray:       #f8fafc;
             --white:         #ffffff;
             --star-gold:     #f59e0b;
+            --radius-lg:     24px;
+            --radius-sm:     12px;
             --shadow-soft:   0 10px 30px rgba(0,0,0,0.05);
         }
 
@@ -55,13 +56,13 @@
         /* Typography */
         .h1 { font-family:'Merriweather', serif; font-size: 1.85rem; font-weight: 900; color: var(--text-main); line-height: 1.2; }
         .h2 { font-family:'Merriweather', serif; font-size: 1.7rem; font-weight: 800; color: var(--text-main); margin-bottom: 20px; }
-        .highlight { background: linear-gradient(120deg, rgba(37, 99, 235, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%); border-bottom: 2px solid var(--brand-soft); }
+        .highlight { background: linear-gradient(120deg, rgba(37, 99, 235, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%); border-bottom: 2px solid var(--brand-header); }
         .badge { display: inline-block; background: var(--brand-dark); color: #fff; font-weight: 700; font-size: 0.75rem; padding: 6px 16px; border-radius: 30px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
         .eyebrow { font-size: 0.8rem; font-weight: 800; color: var(--brand-primary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: block; }
         .attention { color: #dc2626; font-weight: 800; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 8px; display: block; }
 
-        /* Background Sections for Life */
-        .bg-soft { background-color: var(--brand-soft); }
+        /* Color Sections */
+        .bg-soft { background-color: var(--brand-header); }
         .bg-gray { background-color: var(--bg-gray); }
         .bg-white { background-color: var(--white); }
 
@@ -78,19 +79,19 @@
         .save-badge { background: #dc2626; color: #fff; font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: 50px; vertical-align: middle; position: relative; top: -10px; }
         .per-bottle { display: block; font-weight: 800; color: #15803d; margin: 10px 0 25px 0; font-size: 1.1rem; }
 
-        .btn-main { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--cta-green); color: #fff; font-weight: 800; font-size: 1.05rem; padding: 18px 30px; border-radius: 10px; width: 100%; max-width: 420px; box-shadow: 0 8px 20px rgba(22, 163, 74, 0.3); transition: 0.2s; }
+        .btn-main { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--cta-green); color: #fff; font-weight: 800; font-size: 1.05rem; padding: 18px 30px; border-radius: 10px; width: 100%; max-width: 400px; box-shadow: 0 8px 20px rgba(22, 163, 74, 0.3); transition: 0.2s; }
         .btn-main:hover { background: var(--cta-hover); transform: translateY(-2px); }
-        .btn-accent { display: inline-flex; align-items: center; justify-content: center; background: var(--accent-yellow); color: #000; font-weight: 800; font-size: 0.95rem; padding: 16px 35px; border-radius: 10px; border-bottom: 3px solid rgba(0,0,0,0.1); transition: 0.2s; }
+        .btn-accent { display: inline-flex; align-items: center; justify-content: center; background: var(--accent-yellow); color: #000; font-weight: 800; font-size: 0.95rem; padding: 15px 35px; border-radius: 10px; border-bottom: 3px solid rgba(0,0,0,0.1); transition: 0.2s; }
         .btn-accent:hover { transform: translateY(-2px); }
 
-        /* Testimonials (Fixed Characters) */
+        /* Testimonials (Fixed Photos) */
         .reviews-list { display: flex; flex-direction: column; gap: 20px; margin-top: 30px; }
         .review-card { background: #fff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 40px 30px; text-align: center; box-shadow: var(--shadow-soft); }
-        .review-photo { width: 85px; height: 85px; border-radius: 50%; margin: 0 auto 15px; border: 3px solid var(--brand-header); object-fit: cover; }
+        .review-photo { width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; border: 3px solid var(--brand-header); object-fit: cover; }
         .review-verify { color: #16a34a; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 12px; display: block; }
         .review-text { font-size: 1.05rem; color: var(--text-body); line-height: 1.7; margin-bottom: 15px; font-style: italic; }
         .review-author { font-weight: 800; color: var(--text-main); font-size: 1rem; display: block; }
-        .star-box { display: flex; justify-content: center; gap: 4px; color: var(--star-gold); margin-bottom: 8px; }
+        .stars { display: flex; justify-content: center; gap: 4px; color: var(--star-gold); margin-bottom: 8px; }
 
         /* Trust & Mechanism */
         .trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
@@ -101,12 +102,7 @@
         .step { display: flex; gap: 15px; margin-bottom: 25px; text-align: left; }
         .step-num { width: 36px; height: 36px; background: var(--brand-primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; flex-shrink: 0; }
 
-        /* Contact Details - (image_efb21a match) */
-        .contact-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 30px; }
-        .contact-box { background: #fff; padding: 30px 25px; border-radius: 12px; border: 1px solid #f1f5f9; box-shadow: 0 4px 15px rgba(0,0,0,0.02); display: flex; align-items: center; gap: 20px; text-align: left; }
-        .contact-icon { width: 45px; height: 45px; color: #333; flex-shrink: 0; }
-
-        /* Final CTA (image_f186e3 Style) */
+        /* Final Offer Section */
         .final-hero { background: linear-gradient(145deg, #0f172a, #1e3a8a); border-radius: 24px; padding: 70px 30px; text-align: center; color: #fff; margin-top: 40px; }
         .final-price-wrap { display: flex; align-items: center; justify-content: center; gap: 20px; margin: 40px 0; }
         .btn-white { background: #fff; color: var(--brand-dark); font-weight: 800; font-size: 1.1rem; padding: 22px 50px; border-radius: 12px; text-transform: uppercase; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: 0.3s; width: 100%; max-width: 460px; }
@@ -118,9 +114,11 @@
         .faq-q { width: 100%; padding: 20px 0; text-align: left; font-weight: 700; font-size: 1.05rem; color: var(--text-main); display: flex; justify-content: space-between; align-items: center; }
         .faq-a { display: none; padding-bottom: 20px; color: var(--text-body); line-height: 1.7; }
 
-        /* Footer */
+        /* Discreet Footer Contact */
         .footer { background: #0f172a; color: #94a3b8; padding: 60px 20px; text-align: center; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.05); }
-        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-bottom: 30px; font-weight: 600; color: #fff; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-bottom: 25px; font-weight: 600; color: #fff; }
+        .footer-contact-info { margin-bottom: 30px; color: #cbd5e1; font-size: 0.75rem; line-height: 1.8; }
+        .footer-contact-info strong { color: #fff; }
 
         /* Floating Button */
         .floating-btn { position: fixed; bottom: 30px; right: 25px; background: var(--cta-green); color: #fff; width: 65px; height: 65px; border-radius: 50%; display: none; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(22, 163, 74, 0.45); z-index: 999; animation: pulse 2s infinite; }
@@ -136,14 +134,12 @@
             .price-flex { justify-content: flex-start; }
             .btn-main { width: auto; padding: 20px 60px; font-size: 1.15rem; }
             .trust-grid { grid-template-columns: repeat(4, 1fr); }
-            .reviews-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+            .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
             .mechanism-flex { display: flex; flex-direction: row; align-items: center; gap: 60px; }
             .flex-reverse { flex-direction: row-reverse; }
-            .contact-grid { grid-template-columns: 1fr 1fr; gap: 25px; }
             .logo { max-width: 170px; }
         }
 
-        /* Modals */
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 100000; align-items: center; justify-content: center; padding: 20px; }
         .modal.open { display: flex; }
         .modal-body { background: #fff; border-radius: 20px; max-width: 650px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 40px; position: relative; }
@@ -152,23 +148,23 @@
 </head>
 <body>
 
-<!-- 1. Top Offer Bar -->
+<!-- Top Offer Bar -->
 <div class="top-bar">60-DAY MONEY BACK GUARANTEE | SAVE $780 TODAY</div>
 
-<!-- 2. Professional Header -->
+<!-- Professional Header -->
 <header class="site-header">
     <div class="container">
         <img src="images/imgi_1_FSP_Black@4x.png" alt="Free Sugar Pro Logo" class="logo">
     </div>
 </header>
 
-<!-- 3. Hero Section - bg-white -->
+<!-- Session 1: Hero (White Background - Life: bg-white) -->
 <section class="section bg-white" style="padding-top: 40px;">
     <div class="container">
         <div class="flex-grid">
             <div class="hero-img-container">
                 <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9">
-                    <img src="images/imgi_6_3bottles.png" alt="Free Sugar Pro Discount Bundle" class="hero-img">
+                    <img src="images/imgi_6_3bottles.png" alt="Free Sugar Pro Bundle Offer" class="hero-img">
                 </a>
             </div>
             <div style="flex: 1;">
@@ -196,21 +192,21 @@
     </div>
 </section>
 
-<!-- 4. Scientific Section - bg-gray -->
+<!-- Session 2: Scientific Section (Life: bg-gray) -->
 <section class="section bg-gray" style="padding: 25px 0;">
     <div class="container text-center">
         <p style="font-size: 0.6rem; font-weight: 800; text-transform: uppercase; color: var(--brand-dark); margin-bottom: 15px; letter-spacing: 1px;">Referenced in Scientific & Health Publications</p>
-        <img src="images/imgi_2_scientific-refs.png" alt="Trusted Studies" style="max-width: 600px; margin: 0 auto; opacity: 0.85;">
+        <img src="images/imgi_2_scientific-refs.png" alt="Trust Proof Scientific" style="max-width: 600px; margin: 0 auto; opacity: 0.85;">
     </div>
 </section>
 
-<!-- 5. Testimonials Section - bg-soft (#BEE1F5) -->
+<!-- Session 3: Testimonials (Life: bg-soft #BEE1F5) -->
 <section class="section bg-soft">
     <div class="container text-center">
         <span class="badge">Verified Customer Stories</span>
         <div style="margin-bottom: 35px;">
             <span style="font-size: 2.5rem; font-weight: 900; color: var(--text-main);">4.98</span>
-            <div class="star-box">
+            <div class="stars">
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
@@ -221,21 +217,21 @@
         </div>
 
         <div class="reviews-list">
-            <!-- Sarah J. (Female) -->
+            <!-- Sarah J. - Woman -->
             <div class="review-card">
                 <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop" alt="Sarah J." class="review-photo">
                 <span class="review-verify">✓ Verified Purchase</span>
                 <p class="review-text">"My energy used to dip so hard in the afternoon. Free Sugar Pro helped stabilize my day. I don't feel that crash anymore."</p>
                 <span class="review-author">Sarah J. — Austin, TX</span>
             </div>
-            <!-- Mark D. (Male) -->
+            <!-- Mark D. - Man -->
             <div class="review-card">
                 <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop" alt="Mark D." class="review-photo">
                 <span class="review-verify">✓ Verified Purchase</span>
                 <p class="review-text">"It's not an overnight miracle, but the consistency paid off. I feel my body processing meals much more efficiently."</p>
                 <span class="review-author">Mark D. — Miami, FL</span>
             </div>
-            <!-- Elena R. (Female) -->
+            <!-- Elena R. - Woman -->
             <div class="review-card">
                 <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop" alt="Elena R." class="review-photo">
                 <span class="review-verify">✓ Verified Purchase</span>
@@ -246,12 +242,12 @@
     </div>
 </section>
 
-<!-- 6. Know Before Session - bg-white -->
+<!-- Session 4: Know Before Trying (Life: bg-white) -->
 <section class="section bg-white">
     <div class="container">
         <div class="flex-grid">
             <div class="hero-img-container">
-                <img src="images/glycofreepro2.png" alt="Free Sugar Pro Formula Insight" class="mechanism-img" onerror="this.src='https://placehold.co/480x400?text=Formula+Insight'">
+                <img src="images/glycofreepro2.png" alt="Free Sugar Pro Formula Details" class="mechanism-img">
             </div>
             <div style="flex: 1;">
                 <span class="attention">Must Read:</span>
@@ -268,26 +264,26 @@
     </div>
 </section>
 
-<!-- 7. USA Quality Standards - bg-gray -->
+<!-- Session 5: Quality Standards (Life: bg-gray) -->
 <section class="section bg-gray">
     <div class="container text-center">
         <h2 class="h2">Built Under Strict Quality & Safety Standards</h2>
         <p class="body-text" style="max-width: 800px; margin: 0 auto 35px;">Free Sugar Pro is produced in the United States in facilities that follow <strong>Good Manufacturing Practices (GMP)</strong> to help ensure purity, safety, and reliability.</p>
         <div class="trust-grid">
-            <div class="trust-box"><img src="images/imgi_6_badge-usa.png" alt="USA Production"><strong>Made in USA</strong><p style="font-size:0.75rem">Local & Global Ingredients</p></div>
-            <div class="trust-box"><img src="images/imgi_7_badge-fda.png" alt="FDA Certified"><strong>FDA Registered</strong><p style="font-size:0.75rem">Certified Facility</p></div>
-            <div class="trust-box"><img src="images/imgi_8_badge-gmp.png" alt="GMP Standard"><strong>GMP Certified</strong><p style="font-size:0.75rem">Strict Quality Control</p></div>
-            <div class="trust-box"><img src="images/imgi_9_badge-natural.png" alt="Natural Purity"><strong>100% Natural</strong><p style="font-size:0.75rem">Liquid Metabolic Formula</p></div>
+            <div class="trust-box"><img src="images/imgi_6_badge-usa.png" alt="Made in USA"><strong>Made in USA</strong><p style="font-size:0.75rem">Local & Global Ingredients</p></div>
+            <div class="trust-box"><img src="images/imgi_7_badge-fda.png" alt="FDA Facility"><strong>FDA Registered</strong><p style="font-size:0.75rem">Certified Facility</p></div>
+            <div class="trust-box"><img src="images/imgi_8_badge-gmp.png" alt="GMP Compliance"><strong>GMP Certified</strong><p style="font-size:0.75rem">Strict Quality Control</p></div>
+            <div class="trust-box"><img src="images/imgi_9_badge-natural.png" alt="Pure Natural"><strong>100% Natural</strong><p style="font-size:0.75rem">Liquid Metabolic Formula</p></div>
         </div>
     </div>
 </section>
 
-<!-- 8. Simple Liquid habit Session - bg-white -->
+<!-- Session 6: Simple Liquid habit (Life: bg-white) -->
 <section class="section bg-white">
     <div class="container">
         <div class="mechanism-flex" style="display: flex; flex-direction: column; gap: 40px; align-items: center;">
             <div style="width: 100%; max-width: 480px;">
-                <img src="images/sugarfree.png" alt="Liquid Dropper Usage" class="mechanism-img" onerror="this.src='https://placehold.co/480x400?text=Daily+Routine'">
+                <img src="images/sugarfree.png" alt="Usage Guide Drops" class="mechanism-img">
             </div>
             <div style="flex: 1;">
                 <span class="attention">Daily Protocol:</span>
@@ -306,7 +302,7 @@
     </div>
 </section>
 
-<!-- 9. Supporting vs Forcing - bg-soft (#BEE1F5) -->
+<!-- Session 7: Supporting vs Forcing (Life: bg-soft #BEE1F5) -->
 <section class="section bg-soft text-center">
     <div class="container">
         <h2 class="h2">Supporting — Not Forcing — Your Body</h2>
@@ -316,11 +312,11 @@
     </div>
 </section>
 
-<!-- 10. Ingredients Section - bg-white -->
+<!-- Session 8: Ingredients (Life: bg-white) -->
 <section class="section bg-white">
     <div class="container text-center">
         <h2 class="h2">The Key Ingredients Behind the Formula</h2>
-        <img src="images/imgi_2_FSP_Mockup_02.png" alt="Liquid Formula Selection" style="max-width: 280px; margin: 30px auto; display: block;" onerror="this.src='https://placehold.co/280x400?text=Formula+Mockup'">
+        <img src="images/imgi_2_FSP_Mockup_02.png" alt="Powerful Ingredients" style="max-width: 280px; margin: 30px auto; display: block;">
         <div style="max-width: 600px; margin: 30px auto; text-align: left;">
             <div class="step"><div class="step-num">1</div><div class="body-text"><strong>Chromium:</strong> Commonly linked to glucose metabolism and nutrient processing.</div></div>
             <div class="step"><div class="step-num">2</div><div class="body-text"><strong>Maca Root:</strong> Traditionally associated with energy, vitality, and daily balance.</div></div>
@@ -332,42 +328,42 @@
     </div>
 </section>
 
-<!-- 11. Guarantee Section - bg-gray -->
+<!-- Session 9: Guarantee (Life: bg-gray) -->
 <section class="section bg-gray">
     <div class="container text-center">
         <div class="flex-grid" style="justify-content: center;">
-            <img src="images/imgi_13_guarantee-badge.png" alt="60-Day Guarantee" style="width: 140px;" onerror="this.src='https://placehold.co/150x150?text=60+Days'">
+            <img src="images/imgi_13_guarantee-badge.png" alt="Satisfaction Guarantee" style="width: 140px;">
             <div>
                 <h3 class="h2">60-Day Window to Try It With Peace of Mind</h3>
                 <p class="body-text" style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">Starting something new can feel uncertain. That’s why Free Sugar Pro comes with a <strong>60-day satisfaction policy</strong>. Observe how your body responds over time. No pressure.</p>
                 <div style="margin-top: 30px;">
-                    <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="btn-main">VIEW CURRENT OFFER →</a>
+                    <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="btn-green">VIEW CURRENT OFFER →</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 12. Strategic FAQ - bg-white -->
+<!-- Session 10: FAQ (Life: bg-white) -->
 <section class="section bg-white">
     <div class="container">
         <h2 class="h2 text-center">Common Questions</h2>
         <div class="faq-container">
-            <div class="faq-item"><div class="faq-q"><span>Is Free Sugar Pro a medication?</span><span>+</span></div><div class="faq-a">No. It’s a dietary supplement designed to support daily wellness and metabolic balance naturally using recognized botanical extracts.</div></div>
-            <div class="faq-item"><div class="faq-q"><span>Is it capsules or liquid drops?</span><span>+</span></div><div class="faq-a">Free Sugar Pro is a liquid formula. This allows for faster absorption and is much easier to take than large pills or capsules.</div></div>
+            <div class="faq-item"><div class="faq-q"><span>Is Free Sugar Pro a medication?</span><span>+</span></div><div class="faq-a">No. It’s a dietary supplement designed to support daily wellness and metabolic balance naturally using recognized extracts.</div></div>
+            <div class="faq-item"><div class="faq-q"><span>Is it capsules or liquid drops?</span><span>+</span></div><div class="faq-a">Free Sugar Pro is a liquid formula. This allows for faster absorption and is much easier to take than large pills.</div></div>
             <div class="faq-item"><div class="faq-q"><span>How long until I notice results?</span><span>+</span></div><div class="faq-a">Reports indicate changes within a few weeks. Consistency is key. We recommend at least 60-90 days for full adjustment.</div></div>
             <div class="faq-item"><div class="faq-q"><span>How does the guarantee work?</span><span>+</span></div><div class="faq-a">Try it for 60 days. If you're not satisfied for any reason, simply contact support for a full refund of your purchase price.</div></div>
         </div>
     </div>
 </section>
 
-<!-- 13. Final Offer (Matches f186e3 precisely) -->
+<!-- Session 11: Final Offer (image_f186e3 Style) -->
 <section class="final-hero">
     <div class="container">
         <h2 class="h2" style="color: #fff; font-size: 2.8rem; margin-bottom: 10px;">Feel like yourself again.</h2>
         <p style="color: #cbd5e1; font-size: 1.15rem; margin-bottom: 45px;">Support your body differently. No hype. No pressure. Just consistent daily support.</p>
         
-        <img src="images/imgi_6_3bottles.png" alt="Final Bottle Pack" style="max-width: 250px; margin: 0 auto 30px;">
+        <img src="images/imgi_6_3bottles.png" alt="Free Sugar Pro Bundle Pack" style="max-width: 250px; margin: 0 auto 35px;">
         
         <div class="final-price-wrap">
             <span style="font-size: 1.5rem; color: #94a3b8; text-decoration: line-through;">$1074</span>
@@ -376,37 +372,13 @@
         
         <p style="font-weight: 800; color: #fff; font-size: 1.3rem; margin-bottom: 35px;">Only US$ 49 per bottle!</p>
         
-        <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="final-btn">VERIFY TODAY'S AVAILABILITY</a>
+        <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" class="btn-white">VERIFY TODAY'S AVAILABILITY</a>
         
         <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 35px;">60-day money-back guarantee · Secure payment · One-time purchase</p>
     </div>
 </section>
 
-<!-- 14. Contact Session - Life: bg-soft (#BEE1F5) -->
-<section class="section bg-soft" style="border-top: 1px solid rgba(0,0,0,0.05);">
-    <div class="container text-center">
-        <h2 class="h2">Contact Us</h2>
-        <div class="contact-grid">
-            <div class="contact-card" style="background: #fff; padding: 30px 25px; border-radius: 12px; display: flex; align-items: center; gap: 20px; text-align: left; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
-                <svg class="contact-icon-svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="width: 45px; height: 45px; color: #333; flex-shrink: 0;"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path></svg>
-                <div>
-                    <strong style="display: block; color: #000; font-size: 1rem;">Product Email Support</strong>
-                    <span style="font-size: 0.95rem; color: #555;">freesugar@bestcsupport.com</span>
-                </div>
-            </div>
-            <div class="contact-card" style="background: #fff; padding: 30px 25px; border-radius: 12px; display: flex; align-items: center; gap: 20px; text-align: left; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
-                <svg class="contact-icon-svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="width: 45px; height: 45px; color: #333; flex-shrink: 0;"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                <div>
-                    <strong style="display: block; color: #000; font-size: 1rem;">Order Support - Toll Free</strong>
-                    <span style="font-size: 0.95rem; color: #555;">+1 (720) 513-3306 - 24/7</span>
-                </div>
-            </div>
-        </div>
-        <p style="margin-top: 30px; font-size: 0.85rem; color: #666; font-weight: 500;">We aim to respond to all inquiries within 24–48 hours.</p>
-    </div>
-</section>
-
-<!-- Footer -->
+<!-- Session 12: Discreet Footer & Contact -->
 <footer class="footer">
     <div class="container">
         <div class="footer-links">
@@ -414,6 +386,13 @@
             <a onclick="openModal('terms')">Terms of Service</a>
             <a href="https://54d32gtkgy4ocu5avdlp74hft5.hop.clickbank.net/#i5b9" target="_blank">References</a>
         </div>
+        
+        <div class="footer-contact-info">
+            <strong>Contact Us</strong><br>
+            Product Email Support: <strong>freesugar@bestcsupport.com</strong> | Order Support - Toll Free: <strong>+1 (720) 513-3306 - 24/7</strong><br>
+            We aim to respond to all inquiries within 24–48 hours.
+        </div>
+
         <p style="line-height: 1.6;">FDA Compliance: These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Individual results may vary.</p>
         <p style="margin-top: 15px;">&copy; 2026 Free Sugar Pro. All Rights Reserved.</p>
     </div>
