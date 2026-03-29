@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <script src="https://api.stuart-little.com/code/8300-5c5b6aa2-f400-437c-a94b-27d7943c52f0"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,11 +71,13 @@
         .body-text p{margin-bottom:16px}
         .eyebrow{font-size:.75rem;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
 
+        /* Top Offer Bar */
         .offer-bar{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 50%,#2563eb 100%);color:#fff;padding:10px 16px}
         .offer-bar-inner{max-width:768px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 24px}
         .offer-bar-item{display:flex;align-items:center;gap:6px;font-weight:700;font-size:.75rem}
         .offer-bar-item svg{width:16px;height:16px}
 
+        /* Site Header */
         .site-header {
             background: #fff;
             padding: 15px 0;
@@ -87,6 +90,7 @@
             display: block;
         }
 
+        /* Hero Section */
         .hero{padding:32px 0 48px 0;background:var(--bg-white)}
         .hero-inner{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:32px}
         .hero-img{width:100%;max-width:320px;margin:0 auto;filter:drop-shadow(0 8px 20px rgba(0,0,0,.08))}
@@ -100,7 +104,8 @@
         .price-badge{background:#dc2626;color:#fff;font-size:.65rem;font-weight:700;padding:3px 8px;border-radius:99px}
         .per-bottle-label{display:block; font-size: 0.9rem; color: #15803d; font-weight: 800; margin-bottom: 15px;}
 
-        .cta-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--cta);color:#fff;font-weight:800;font-size:1rem;padding:16px 24px;border-radius:10px;transition:all .2s;width:100%;max-width:380px;text-align:center;box-shadow:0 4px 12px rgba(22,163,74,.2)}
+        /* Unified Button Sizing */
+        .cta-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--cta);color:#fff;font-weight:800;font-size:1rem;padding:18px 24px;border-radius:10px;transition:all .2s;width:100%;max-width:380px;text-align:center;box-shadow:0 4px 12px rgba(22,163,74,.2)}
         .cta-primary:hover{background:var(--cta-dark);transform:translateY(-2px)}
         .cta-primary svg{width:20px;height:20px;flex-shrink:0}
         
@@ -133,6 +138,7 @@
         .step{display:flex;gap:16px;margin-bottom:20px;align-items:flex-start}
         .step-num{background:var(--brand);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;flex-shrink:0}
 
+        /* Ingredient image size correction */
         .ingredient-list-img{margin:24px auto;max-width:280px; width: 80%; display: block}
         .ingredient-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid #f1f5f9}
         .ingredient-num{background:var(--brand);color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.75rem;flex-shrink:0;margin-top:2px}
@@ -140,6 +146,9 @@
         .guarantee-wrap{display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center;background:linear-gradient(to right,#eff6ff,#dbeafe);padding:40px 20px;border-radius:20px}
         .guarantee-badge-img{width:120px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.05))}
         .guarantee-title{font-family:'Merriweather',serif;font-size:1.25rem;font-weight:800;color:var(--brand-dark)}
+
+        .benefit-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px}
+        .benefit-check{width:20px;height:20px;color:var(--cta);flex-shrink:0;margin-top:2px}
 
         .faq-list{margin-top:20px}
         .faq-item{border-bottom:1px solid #e5e7eb}
@@ -515,7 +524,6 @@
     // Floating CTA visibility
     const cta = document.getElementById('floatingCta');
     window.addEventListener('scroll', () => {
-        // Exibir após rolar 800 pixels
         cta.style.display = window.scrollY > 800 ? 'flex' : 'none';
     }, {passive: true});
 </script>
